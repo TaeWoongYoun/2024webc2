@@ -32,7 +32,6 @@
         <button type="submit">가입하기</button>
         <button type="reset" class="login_reset">취소</button>
     </div>
-
     <script src="index.js"></script>
 </body>
 </html>
