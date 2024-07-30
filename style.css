@@ -57,3 +57,48 @@
     margin-top: 10px;
 }
 
+.login_modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    width: 300px;
+    height: 250px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #444;
+    display: none;
+}
+
+.login_modal h2{
+    text-align: center;
+    line-height: 50px;
+}
+
+.login_modal input[name='userid']{
+    width: 285px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.login_modal input[name='userpw']{
+    width: 285px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.login_modal select{
+    margin-top: 5px;
+}
+
+.login_modal button[type='submit']{
+    margin-left: 60px;
+}
+
+.login_modal button[type='submit'], .login_modal button[type='reset']{
+    width: 90px;
+    height: 35px;
+    margin-top: 10px;
+}
