@@ -23,4 +23,5 @@ $(document).ready(function(){
             alert("아이디 중복확인을 해주세요");
             return false;
         }
+    }
 })
