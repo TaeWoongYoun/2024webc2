@@ -25,3 +25,27 @@
         boothModal.style.display = 'none';
     })
 </script>
+
+<h5>승인 영역</h5>
+<div class="booth_area">
+    <?php
+        $sql = "SELECT * FROM booth_man";
+        $result = mysqli_query($conn, $sql);
+        while ($row = mysqli_fetch_array($result)){
+            echo "
+            <div class='booth_admin'>
+                <p>운영일자 : {$row['date']}</p>
+                <p>운영시간 : {$row['start_time']} ~ {$row['finish_time']}</p>
+                <p>최대인원 : {$row['member']}</p>
+                <p>체험이름 : {$row['ex_name']}</p>
+                <button>승인</button>
+                <form action='booth_delete.php' method='post'>
+                    <input type='hidden' name='id' value='{$row['id']}'>
+                    <button type='submit'>거절</button>
+                </form>
+            </div>
+            ";
+        }
+    ?>
+</div>
+
