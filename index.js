@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
     modal(loginBtn, joinModal, 'none');
     modal(loginReset, loginModal, 'none');
 
+    
 })
 document.querySelector('.join_submit').addEventListener('click', function(event) {
     const userid = document.querySelector('#userid').value;

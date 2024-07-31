@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>대전 C모듈</title>
     <link rel="stylesheet" href="style.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-    <button class="login_btn">로그인</button>
-    <button class="join_btn">회원가입</button>
+    <?php require('./header/btn.php')?>
 
     <div class="join_modal">
         <h2>회원가입</h2>
@@ -40,6 +38,7 @@
         </form>
     </div>
 
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="index.js"></script>
     <script src="check_id.js"></script>
 </body>
