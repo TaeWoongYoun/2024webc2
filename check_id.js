@@ -18,10 +18,9 @@ $(document).ready(function(){
     $('#userid').change(function(){
         $('#ok').val(0);
     })
-    function ck(f){
-        if(f.ok.value != 1){
-            alert("아이디 중복확인을 해주세요")
+    window.ck = function(f){
+        if($('#ok').val() != 1){
+            alert("아이디 중복확인을 해주세요");
             return false;
         }
-    }
 })
