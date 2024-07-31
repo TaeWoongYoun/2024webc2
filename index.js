@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
     modal(loginBtn, joinModal, 'none');
     modal(loginReset, loginModal, 'none');
 
-    })
+})
 document.querySelector('.join_submit').addEventListener('click', function(event) {
     const userid = document.querySelector('#userid').value;
     const name = document.querySelector('#name').value;
@@ -30,7 +30,7 @@ document.querySelector('.join_submit').addEventListener('click', function(event)
         event.preventDefault();
         return false;
     }
-    if (name.length < 4) {
+    if (name.length < 2) {
         alert("이름을 2글자 이상 입력해주세요.");
         event.preventDefault();
         return false;
