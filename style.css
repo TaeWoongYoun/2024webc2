@@ -114,3 +114,16 @@
     box-shadow: 0 0 5px #444;
     display: none;
 }
+
+.booth_area{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.booth{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+}
