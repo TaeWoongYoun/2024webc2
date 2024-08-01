@@ -17,7 +17,7 @@
             <input type='hidden' name='member' value='{$row['member']}'>
             <input type='text' name='ex_name' placeholder='체험이름' require>
             <button type='submit'>등록요청</button>
-        </form>        
+        </form>
         </div>
         ";
     }
