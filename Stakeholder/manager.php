@@ -23,3 +23,22 @@
     }
     ?>
 </div>
+
+<h3>승인대기 영역</h3>
+<div class="booth_area">
+    <?php
+        $sql = "SELECT * FROM booth_man";
+        $result = mysqli_query($conn, $sql);
+        while ($row = mysqli_fetch_array($result)){
+            echo "
+            <div class='booth_admin'>
+                <p>운영일자 : {$row['date']}</p>
+                <p>운영시간 : {$row['start_time']} ~ {$row['finish_time']}</p>
+                <p>최대인원 : {$row['member']}</p>
+                <p>체험이름 : {$row['ex_name']}</p>
+                <button>승인대기</button>
+            </div>
+            ";
+        }
+    ?>
+</div>
